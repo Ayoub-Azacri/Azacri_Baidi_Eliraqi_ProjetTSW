@@ -1,0 +1,19 @@
+#FAFAFA #F2F2F2 #F3F3F3
+#F4F66D #ff6500
+
+#F66D6D
+
+
+.navigation {
+          margin: 100px 80px;
+          height:400px;
+          background-color: -webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
+          color: #999;
+          position: relative;
+          border:2px solid #A9A9A9;
+          border-radius:8px;
+          display: inline-block;
+          width:20%;
+          height: 120px;
+          
+      }

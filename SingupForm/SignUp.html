@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="/index.html">e<strong>-learning</strong></a></div>
+                <ul class="menu-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Cours</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/SingupForm/SignUp.html">Login</a></li>
+                </ul>
+        </div>
+    </nav>
+   <div class="wrapper">
+       <div class="title-text">
+           <div class="title login">Login Form</div>
+           <div class="title signup">Signup Form</div>
+       </div>
+       <div class="form-container">
+           <div class="slide-controls">
+               <input type="radio" name="slider" id="login" checked>
+               <input type="radio" name="slider" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slide-tab"></div>
+           </div>
+           <div class="form-inner">
+               <form action="#" class="login">
+                   <div class="field">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                       <input type="text" placeholder="Email Address" required>
+                   </div>
+                   <div class="field">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password" required>
+                    </div>
+                <div class="pass-link"><a href="#">Forgot password?</a></div>
+                <div class="field">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+               </form>
+
+               <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                 <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+                </div>
+                <div class="field">
+                 <input type="submit" value="Signup">
+                 </div>
+                </form>
+           </div>
+       </div>
+   </div>
+   <script>
+       const loginForm = document.querySelector("form.login");
+       const signupForm = document.querySelector("form.signup");
+       const loginBtn = document.querySelector("label.login");
+       const signupBtn = document.querySelector("label.signup");
+       const signupLink= document.querySelector(".signup-link a");
+       const loginText= document.querySelector(".title-text .login");
+       const signupText= document.querySelector(".title-text .signup");
+       signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+           
+       });
+       loginBtn.onclick =(()=>{
+           loginForm.style.marginLeft = "0%"; 
+           loginText.style.marginLeft = "0%"; 
+           
+
+       });
+       signupLink.onclick =(()=>{
+           signupBtn.click();
+           
+       });
+   </script>
+</body>
+</html>

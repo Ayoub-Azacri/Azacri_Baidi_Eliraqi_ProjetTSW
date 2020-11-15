@@ -30,3 +30,40 @@
     top: 17px;
     left: 7px;
 } */
+
+
+navbar .logo a{
+            color: #fff;
+            float: left;
+            font-size: 35px;
+            font-weight: 500;
+            text-decoration: none;
+            align-items: center;
+            padding-bottom: 30px;   
+        }
+
+
+
+  <div class="carousel">
+            <div class="card ">
+                <div class="box">
+                    <img src="/img/Image-1.jpeg" alt="">
+                    <div class="text">Someone name</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="box">
+                    <img src="/img/Image-1.jpeg" alt="">
+                    <div class="text">Someone name</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="box">
+                    <img src="/img/Image-1.jpeg" alt="">
+                    <div class="text">Someone name</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>

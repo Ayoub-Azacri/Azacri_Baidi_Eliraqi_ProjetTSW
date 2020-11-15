@@ -17,3 +17,16 @@
           height: 120px;
           
       }
+
+      /* .field .fa-lock{
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    color: #798180;
+}
+
+.field .fa-envelope{
+    position: absolute;
+    top: 17px;
+    left: 7px;
+} */

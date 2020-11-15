@@ -17,6 +17,11 @@
             padding-bottom: 57.27px;
             min-height: 100vh;
         }
+        .max-width {
+            max-width: 1300px;
+            padding: 0 80px;
+            margin: auto;
+        }
 
         .navbar{
            
@@ -85,43 +90,43 @@
       
 
       /* About section */
-      section .about {
-        padding: 100px ;
+    section .about, .teams {
+    padding: 100px ;
       }
-      .about {
-          font-family: 'Poppins', sans-serif;
-          margin-top: 40px;
+    .about{
+        font-family: 'Poppins', sans-serif;
+        margin-top: 40px;
       }
-      .about .title {
-          position: relative;
-          text-align: center;
-          font-size: 40px;
-          font-weight: 500;
-          margin-bottom: 60px;
-          padding-bottom: 20px;
-          font-family: 'Ubuntu', sans-serif;
+    .about .title {
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
       }
 
-      .about .title::before {
-          content: "";
-          position: absolute;
-          bottom:0px;
-          left: 50%;
-          width: 180px;
-          height: 3px;
-          background: #111;
-          transform: translateX(-50%);
-      }
-      .about .title::after {
-        content: "Who we are";
+    .about .title::before {
+        content: "";
         position: absolute;
-        bottom:-12px;
+        bottom:0px;
         left: 50%;
-        font-size: 20px;
-        color: crimson;
-        padding:5px;
-        background:-webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
+        width: 180px;
+        height: 3px;
+        background: #111;
         transform: translateX(-50%);
+      }
+    .about .title::after {
+    content: "Who we are";
+    position: absolute;
+    bottom:-12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding:5px;
+    background:-webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
+    transform: translateX(-50%);
     }
     .about .about-content {
         display: flex;
@@ -132,7 +137,7 @@
         
     }
     .about .about-content .middle {
-        width: 40%;
+        width: 50%;
     }
     
     .about .about-content .middle .p {
@@ -156,6 +161,54 @@
         color:crimson;
         background: none;
     }
+
+    /* Teams Section  */
+    .teams {
+        font-family: 'Poppins', sans-serif;
+        margin-top: 40px;
+    }
+    .teams .title {
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .teams .title::before {
+        content: "";
+        position: absolute;
+        bottom:0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    .teams .title::after {
+        content: "who with me ";
+        position: absolute;
+        bottom:-12px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding:5px;
+        background:-webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
+        transform: translateX(-50%);
+        }
+        .teams .carousel .card{
+         background:-webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
+         border-radius: 6px;
+         padding: 25px 35px ;
+        }
+        .teams .carousel .card img{
+         height: 150px;
+         width: 150px;
+         object-fit: cover;
+         border-radius: 50%;
+         border: 5px solid crimson;
+        }
 
       /* footer  */
       .footer-page {

@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="/CSS/About.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+
 </head>
 <body>
     <!--Navbar-->
@@ -17,13 +22,15 @@
         <div class="content">
             <div class="logo"><a href="#">e<strong>-learning</strong></a></div>
                 <ul class="menu-list">
-                    <li><a href="/HTML/index.html">Home</a></li>
-                    <li><a class="active" href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="/HTML/SignUp.html">Login</a></li>
+                    <li><a href="/HTML/index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a class="active" href="#"><i class="fa fa-file-text-o"></i>About</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+                    <li><a href="/HTML/SignUp.html"><i class="fa fa-sign-in"></i>Login</a></li>
                     <li><a href="#">Language</a></li>
                 </ul>
-                       
+                <div class="menu-btn">
+                    <i class="fas fas-bars"></i>
+                </div>    
         </div>  
     </nav>
 <!-- About Section part  -->
@@ -45,27 +52,28 @@
 <section class="teams" id="teams">
     <div class="max-width">
         <h2 class="title">My teams</h2>
-        <div class="carousel owl-carousel">
+        <div class="carousel owl-carousel owl-theme">
             <div class="card ">
                 <div class="box">
-                    <img src="/img/Image-1.jpeg" alt="">
+                    <img src="/img/Image-1.jpeg" alt="Ayoub Azacri">
+                    <div class="text">Ayoub Azacri</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="box">
+                    <img src="/img/Image-2.jpeg" alt="Baidi Yasser">
                     <div class="text">Someone name</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                 </div>
             </div>
             <div class="card ">
                 <div class="box">
-                    <img src="/img/Image-2.jpeg" alt="">
+                    <img src="/img/Image-3.jpeg" alt="Ismail Eliraqi">
                     <div class="text">Someone name</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                 </div>
-            </div>
-            <div class="card ">
-                <div class="box">
-                    <img src="/img/Image-3.jpeg" alt="">
-                    <div class="text">Someone name</div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                </div>
+            
             </div>
         </div>
     </div>
@@ -76,6 +84,6 @@
         <p>Created by <span>AyoubAzacri</span> | Copyright &copy; <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</p>
     </footer>
      -->
-   <script src="/JAVASCRIPT/script.js"></script>
+     <script src="/JAVASCRIPT/script.js"></script>
 </body>
 </html>

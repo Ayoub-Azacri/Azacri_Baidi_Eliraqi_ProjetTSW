@@ -228,11 +228,11 @@
         overflow: visible;
         padding: 0;
         text-align: center;
-        &:active {
+    }
+    .vanilla-calendar .vanilla-calendar-btn:active {
             border-radius: var(--vanilla-calendar-border-radius);
             box-shadow: 0 0 0 2px rgba(var(--vanilla-calendar-today-bg-color), 0.1)
-        }
-    }
+            }
     
     .vanilla-calendar .vanilla-calendar-header {
         align-items: center;

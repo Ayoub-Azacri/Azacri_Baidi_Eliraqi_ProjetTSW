@@ -13,10 +13,10 @@
         <div class="content">
             <div class="logo"><a href="/HTML/index.html">e<strong>-learning</strong></a></div>
                 <ul class="menu-list">
-                    <li><a href="/HTML/index.html">Home</a></li>
-                    <li><a href="/HTML/About.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a class="active" href="/HTML/SignUp.html">Login</a></li>
+                    <li><a href="/HTML/index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="/HTML/About.html"><i class="fa fa-file-text-o"></i>About</a></li>
+                    <li><a href="/HTML/Contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
+                    <li><a class="active" href="/HTML/SignUp.html"><i class="fa fa-sign-in"></i>Login</a></li>
                     <li><a href="#">Language</a></li>
                 </ul>
         </div>
@@ -42,11 +42,25 @@
                    </div>
                    <div class="field">
                     <i class="fa fa-lock" ></i>
-                    <input type="password" placeholder="Password" required>
+                    <span class="eye" onclick="myFunction()">
+                     <i id="hide1" class="fa fa-eye"></i>
+                     <i id="hide2" class="fa fa-eye-slash"></i>
+                    </span>
+                    <input type="password" placeholder="Password" id="myInput" required>
+                    
                     </div>
                 <div class="pass-link"><a href="#">Forgot password?</a></div>
                 <div class="field">
                     <input type="submit" value="Login">
+                </div>
+                <div class="auth-log">Or login with</div>
+                <div class="accounts">
+                    <div class="facebook">
+                        <i class="fa fa-facebook-square"><span>Facebook</span></i>
+                    </div>
+                    <div class="google">
+                        <i class="fa fa-google-plus-square"><span>Google</span></i>
+                    </div>
                 </div>
                 <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
                </form>
@@ -54,19 +68,36 @@
                <form action="#" class="signup">
                 <div class="field">
                     <i class="fa fa-envelope"></i>
-                    <input type="email" placeholder="Email Address" required>
+                    <input id="mail" type="email" placeholder="Email Address" required>
                 </div>
                 <div class="field">
                     <i class="fa fa-lock" ></i>
-                    <input type="password" placeholder="Password" required>
+                    <span class="eye" onclick="myFunction1()">
+                     <i id="hide3" class="fa fa-eye"></i>
+                     <i id="hide4" class="fa fa-eye-slash"></i>
+                    </span>
+                    <input type="password" placeholder="Password" id="myInput1" required >
                 </div>
                 <div class="field">
                     <i class="fa fa-lock" ></i>
-                    <input type="password" placeholder="Confirm password" required>
+                    <span class="eye" onclick="myFunction2()">
+                     <i id="hide5" class="fa fa-eye"></i>
+                     <i id="hide6" class="fa fa-eye-slash"></i>
+                    </span>
+                    <input type="password" placeholder="Confirm password" id="myInput2" required>
                 </div>
                 <div class="field">
                  <input type="submit" value="Signup">
                  </div>
+                 <div class="auth-sign">Or signup with</div>
+                <div class="accounts">
+                    <div class="facebook">
+                        <i class="fa fa-facebook-square"><span>Facebook</span></i>
+                    </div>
+                    <div class="google">
+                        <i class="fa fa-google-plus-square"><span>Google</span></i>
+                    </div>
+                </div>
                 </form>
            </div>
        </div>
@@ -79,14 +110,17 @@
        const signupLink= document.querySelector(".signup-link a");
        const loginText= document.querySelector(".title-text .login");
        const signupText= document.querySelector(".title-text .signup");
+       
        signupBtn.onclick = (()=>{
            loginForm.style.marginLeft = "-50%";
            loginText.style.marginLeft = "-50%";
            
+           
        });
        loginBtn.onclick =(()=>{
            loginForm.style.marginLeft = "0%"; 
-           loginText.style.marginLeft = "0%"; 
+           loginText.style.marginLeft = "0%";
+           
            
 
        });
@@ -94,6 +128,55 @@
            signupBtn.click();
            
        });
+
+       let myFunction = () => {
+           let a = document.getElementById("myInput");
+           let b = document.getElementById("hide1");
+           let c = document.getElementById("hide2");
+           
+           if(a.type === 'password'){
+               a.type = "text";
+               b.style.display ="block";
+               c.stle.display = "none";
+           } 
+           else {
+               a.type = "password";
+               b.style.display ="none";
+               c.stle.display = "block";
+           }
+        };
+      let myFunction1 = () => {
+           let i = document.getElementById("myInput1");
+           let j = document.getElementById("hide3");
+           let k = document.getElementById("hide4");
+           
+           if(i.type === 'password'){
+               i.type = "text";
+               j.style.display ="block";
+               k.stle.display = "none";
+           }
+           else {
+               i.type = "password";
+               j.style.display ="none";
+               k.stle.display = "block";
+           }
+        };
+      let myFunction2 = () => {
+           let x = document.getElementById("myInput2");
+           let y = document.getElementById("hide5");
+           let z = document.getElementById("hide6");
+           
+           if(x.type === 'password'){
+               x.type = "text";
+               y.style.display ="block";
+               z.stle.display = "none";
+           }
+           else {
+               x.type = "password";
+               y.style.display ="none";
+               z.stle.display = "block";
+           }
+        };
    </script>
 </body>
 </html>

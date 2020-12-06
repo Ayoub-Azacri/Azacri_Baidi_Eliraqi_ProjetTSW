@@ -98,7 +98,7 @@ html,body{
 
 }
 
-.wrapper .form-container{
+.wrapper .form-container {
     width: 100%;
     overflow: hidden;
 }
@@ -144,6 +144,7 @@ input[type="radio"]{
 #signup:checked ~ .slide-tab{
     left: 50%;
 }
+
 #signup:checked ~ .signup{
     color: #fff;
 }
@@ -176,6 +177,9 @@ input[type="radio"]{
     border-bottom-width: 2px;
     transition: all 0.4s ease;
 }
+#mail {
+    padding-left: 28px;
+}
 .form-inner form .field input:focus{
     border-color: #ff6500;
 }
@@ -203,20 +207,104 @@ form .field input[type="submit"]{
     border:none;
     cursor: pointer;
     background:-webkit-linear-gradient(left,#F66D6D,#ff6500);
-
+    transition: transform 80ms ease-in;
+    
 }
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+/* facebook & google */
+.login .auth-log{
+    text-align: center;
+    margin: 35px 0 20px 0;
+    font-size: 19px;
+    color: #000;
+    
+}
+.signup .auth-sign{
+    text-align: center;
+    margin: 35px 0 20px 0;
+    font-size: 19px;
+    color: #000;  
+    
+}
+.accounts {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+.facebook, .google{
+    height: 40px;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 3px;
+    margin:0 10px;
+    transition: transform 80ms ease-in;
+    
+    
+}
+.facebook:active, .google:active {
+    transform: scale(0.95);
+}
+.facebook:hover{
+    border: 1px solid #4267B2 ;
+}
+.google:hover{
+    border: 1px solid #dd4B39 ;
+}
+.facebook i, .facebook span{
+    color: #4267B2; 
+    
+}
+.google i, .google span{
+    color: #dd4B39; 
+    left: 50;
+    
+}
+.accounts i {
+    font-size: 23px;
+    line-height: 40px;
+    margin-left: -90px;
+}
+.accounts span{
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+/* end  */
 
 
 .field{
-    position: relative;
+    position: relative;  
 }
+
 
 .field .fa{
     position: absolute;
     top: 16px;
-    left: 7px;
+    /* left: 7px; */
+    padding:0 5px 0 7px;
     color: #798180;
     
 }
+
+.eye {
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    user-select: none;
+    visibility:none;
+}
+input:valid ~ .eye {
+    visibility: visible;
+}
+#hide1, #hide3,#hide5{
+    display: none;
+}
+
+
+
 
 

@@ -118,16 +118,16 @@
         transform: translateX(-50%);
       }
     .about .title::after {
-    content: "Who we are";
-    position: absolute;
-    bottom:-12px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding:5px;
-    background:-webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
-    transform: translateX(-50%);
-    }
+        content: "Who we are";
+        position: absolute;
+        bottom:-12px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding:5px;
+        background:-webkit-linear-gradient(left,#FAFAFA,#F2F2F2);
+        transform: translateX(-50%);
+        }
     .about .about-content {
         display: flex;
         flex-wrap: wrap;
@@ -156,10 +156,14 @@
         border: 2px solid crimson;
         transition: all 0.3s ease;
         
+        
     }
     .about .about-content .middle a:hover{
         color:crimson;
         background: none;
+    }
+    .about .about-content .middle a:active {
+        transform: scale(0.95);
     }
 
     /* Teams Section  */
@@ -223,6 +227,9 @@
             margin: 10px 0 7px 0;
             font-family: 'Poppins', sans-serif;
         }
+        .teams .carousel .card .abt{
+            font-weight: 400;
+        }
         .teams .carousel .card img{
          height: 150px;
          width: 150px;
@@ -234,12 +241,14 @@
         .teams .carousel .card:hover img{
          border-color:#F2F2F2;
         }
-        .teams .carousel .card:hover .text{
-            color:#F2F2F2
+        .teams .carousel .card:hover .text,
+        .teams .carousel .card:hover .abt{
+            color:#F2F2F2;
         }
         .owl-dots{
          text-align: center;
          margin-top: 20px;
+         
         }
         .owl-dot{
          height: 13px;
@@ -248,11 +257,18 @@
          outline: none!important;
          border-radius: 50%;
          border: 2px solid crimson!important;
+         transition: all 0.3s ease;
         }
         .owl-dot.active {
             width: 35px;
             border-radius: 14px;
         }
+        .owl-dot.active,
+        .owl-dot:hover{
+            background:crimson!important;
+        }
+
+        
 
       /* footer  */
       .footer-page {

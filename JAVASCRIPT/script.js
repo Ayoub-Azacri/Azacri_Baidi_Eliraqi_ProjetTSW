@@ -1,3 +1,4 @@
+// slideshow for cycling through the images
 $(document).ready(function(){
 
     // owl carousel script 

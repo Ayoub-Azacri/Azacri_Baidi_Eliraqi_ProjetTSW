@@ -57,6 +57,8 @@ let pastDates = true, availableDates = false, availableWeekDays = false
             //     calendar.set({availableWeekDays: days, availableDates: [], datesFilter: true})
             // })
 
+
+            // Nest list 
             $(".nest").on("click", function() {
                 if (
                  $(this)

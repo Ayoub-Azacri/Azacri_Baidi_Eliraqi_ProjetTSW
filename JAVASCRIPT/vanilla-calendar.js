@@ -1,3 +1,5 @@
+// this script for calendar
+
 let VanillaCalendar = (function () {
     function VanillaCalendar(options) {
         function addEvent(el, type, handler){

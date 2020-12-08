@@ -1,3 +1,4 @@
+// this script for calendar too
 let pastDates = true, availableDates = false, availableWeekDays = false
             
             let calendar = new VanillaCalendar({

@@ -88,10 +88,9 @@
           color: #999;
           position: relative;
           top: 50px;
-          /* min-height: calc(100vh - 60px - 57.27px); methode 1 :to keep footer bottom
-          if you want a sticky footer we need to set in body padding-bottom = 57.27px ( size of footer) and a postion:fixed */  
+          /* min-height: calc(100vh - 60px - 57.27px); method 1 :to keep footer bottom */
+          /* if you want a sticky footer we need to set in body padding-bottom = 57.27px ( size of footer) and a postion:fixed */   
       }
-      
       .navigation h1{
         font-size: 30px;
       }
